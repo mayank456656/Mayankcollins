@@ -7,9 +7,4 @@ RUN     yum install httpd -y
 WORKDIR   /var/www/html/
 
 
-RUN     echo  "<h1>Hello From Dockerfile</h1>" > index.html
-
-COPY   may2.html   .
-
-
 CMD  httpd -DFOREGROUND
